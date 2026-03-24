@@ -154,7 +154,7 @@ All paid plans include a **7-day free trial**. Cancel anytime.
 - No analytics or tracking SDKs
 - No advertising in the app
 - You can **export all your data** or **delete your account** at any time
-- Full details: [Privacy Policy](index.html)
+- Full details: [Privacy Policy](Privacy.html)
 
 ---
 
@@ -179,7 +179,7 @@ The EPDS screening feature is informational and is **not a diagnosis**. If you o
 
 ## Links
 
-- [Privacy Policy & Terms of Service](index.html)
+- [Privacy Policy & Terms of Service](Privacy.html)
 - [Help & Support](support.html)
 - [Website](marketing.html)
 
