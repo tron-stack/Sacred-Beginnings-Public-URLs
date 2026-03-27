@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacred Beginnings — Privacy Policy & Terms of Service</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --gold: #C9944A;
+            --gold-light: #D4A85C;
+            --gold-dark: #B07D3A;
+            --bg: #FDF8F3;
+            --bg-card: #FFFFFF;
+            --text: #3D2E1F;
+            --text-secondary: #6B5A4A;
+            --text-light: #8C7B6B;
+            --border: #E8DDD2;
+            --blush: #FFB0C0;
+            --lilac: #D4B8E8;
+            --mint: #B8E6C8;
+            --blue: #A8D8F0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(253, 248, 243, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            z-index: 100;
+            padding: 0 24px;
+        }
+
+        .nav-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 64px;
+        }
+
+        .nav-brand {
+            font-weight: 700;
+            font-size: 18px;
+            color: var(--gold);
+            text-decoration: none;
+            letter-spacing: -0.3px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 8px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-size: 14px;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            background: rgba(201, 148, 74, 0.1);
+            color: var(--gold);
+        }
+
+        /* Hero */
+        .hero {
+            padding: 120px 24px 48px;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        .hero p {
+            color: var(--text-light);
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .hero .updated {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 6px 16px;
+            background: rgba(201, 148, 74, 0.1);
+            color: var(--gold-dark);
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        /* Content */
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px 80px;
+        }
+
+        .section {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 48px;
+            margin-bottom: 32px;
+        }
+
+        @media (max-width: 640px) {
+            .section {
+                padding: 28px 20px;
+                border-radius: 12px;
+            }
+        }
+
+        .section-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: 8px;
+            letter-spacing: -0.3px;
+        }
+
+        .section-subtitle {
+            color: var(--text-light);
+            font-size: 14px;
+            margin-bottom: 36px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--text);
+            margin-top: 36px;
+            margin-bottom: 12px;
+            letter-spacing: -0.2px;
+        }
+
+        h3:first-of-type {
+            margin-top: 0;
+        }
+
+        h4 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text);
+            margin-top: 24px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 12px;
+            color: var(--text-secondary);
+        }
+
+        ul, ol {
+            margin-bottom: 12px;
+            padding-left: 24px;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        strong {
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--gold);
+            text-decoration: underline;
+            text-decoration-color: rgba(201, 148, 74, 0.3);
+            text-underline-offset: 2px;
+            transition: text-decoration-color 0.2s;
+        }
+
+        a:hover {
+            text-decoration-color: var(--gold);
+        }
+
+        .callout {
+            background: rgba(201, 148, 74, 0.08);
+            border-left: 3px solid var(--gold);
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+
+        .callout p {
+            margin-bottom: 0;
+            color: var(--text);
+            font-size: 15px;
+        }
+
+        .callout-warning {
+            background: rgba(255, 176, 192, 0.12);
+            border-left-color: var(--blush);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 14px;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+
+        th {
+            font-weight: 600;
+            color: var(--text);
+            background: rgba(201, 148, 74, 0.05);
+        }
+
+        @media (max-width: 640px) {
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .section-title {
+                font-size: 24px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+
+            table {
+                font-size: 13px;
+            }
+
+            th, td {
+                padding: 8px 10px;
+            }
+
+            .nav-links a {
+                padding: 8px 10px;
+                font-size: 13px;
+            }
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 32px 24px 48px;
+            color: var(--text-light);
+            font-size: 14px;
+            border-top: 1px solid var(--border);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        footer a {
+            color: var(--gold);
+        }
+
+        /* Table of Contents */
+        .toc {
+            background: rgba(201, 148, 74, 0.05);
+            border-radius: 12px;
+            padding: 24px 28px;
+            margin-bottom: 32px;
+        }
+
+        .toc h4 {
+            margin-top: 0;
+            margin-bottom: 12px;
+            color: var(--gold-dark);
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .toc ol {
+            padding-left: 20px;
+            margin-bottom: 0;
+        }
+
+        .toc li {
+            margin-bottom: 4px;
+        }
+
+        .toc a {
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <a href="#" class="nav-brand">Sacred Beginnings</a>
+        <div class="nav-links">
+            <a href="#privacy-policy">Privacy Policy</a>
+            <a href="#terms-of-service">Terms of Service</a>
+        </div>
+    </div>
+</nav>
+
+<div class="hero">
+    <h1>Legal &amp; Privacy</h1>
+    <p>Your trust matters to us. Read about how we protect your data and the terms that govern your use of Sacred Beginnings.</p>
+    <span class="updated">Last Updated: March 24, 2026</span>
+</div>
+
+<div class="content">
+
+    <!-- ======================== PRIVACY POLICY ======================== -->
+    <div class="section" id="privacy-policy">
+        <h2 class="section-title">Privacy Policy</h2>
+        <p class="section-subtitle">This Privacy Policy explains how Sacred Beginnings ("we," "us," or "our") collects, uses, and protects your personal information when you use the Sacred Beginnings mobile application and related services (the "App").</p>
+
+        <div class="toc">
+            <h4>Contents</h4>
+            <ol>
+                <li><a href="#pp-1">Information We Collect</a></li>
+                <li><a href="#pp-2">How We Use Your Information</a></li>
+                <li><a href="#pp-3">Health Data &amp; Apple HealthKit / Health Connect</a></li>
+                <li><a href="#pp-4">AI Chatbot &amp; Anthropic</a></li>
+                <li><a href="#pp-5">Third-Party Services</a></li>
+                <li><a href="#pp-6">Data Storage &amp; Security</a></li>
+                <li><a href="#pp-7">Data Sharing</a></li>
+                <li><a href="#pp-8">Your Rights &amp; Choices</a></li>
+                <li><a href="#pp-9">Data Retention</a></li>
+                <li><a href="#pp-10">Children's Privacy (COPPA)</a></li>
+                <li><a href="#pp-11">International Users (GDPR)</a></li>
+                <li><a href="#pp-12">California Residents (CCPA/CPRA)</a></li>
+                <li><a href="#pp-13">Changes to This Policy</a></li>
+                <li><a href="#pp-14">Contact Us</a></li>
+            </ol>
+        </div>
+
+        <h3 id="pp-1">1. Information We Collect</h3>
+
+        <h4>Account Information</h4>
+        <p>When you create an account, we collect your name, email address, and a securely hashed password. We may also collect your selected journey type, spiritual preferences, and partner status during onboarding.</p>
+
+        <h4>Health &amp; Fertility Data</h4>
+        <p>To provide cycle tracking and fertility insights, we collect data you voluntarily enter, including:</p>
+        <ul>
+            <li>Menstrual cycle dates and flow intensity</li>
+            <li>Basal body temperature (BBT) readings</li>
+            <li>Ovulation prediction kit (OPK) results</li>
+            <li>Cervical mucus observations</li>
+            <li>Symptoms (up to 15 types) and moods (up to 10 types)</li>
+            <li>Intimacy logs</li>
+        </ul>
+
+        <h4>Apple HealthKit &amp; Android Health Connect Data</h4>
+        <p>With your explicit permission, we read the following data from Apple HealthKit or Android Health Connect:</p>
+        <ul>
+            <li>Sleep duration and quality</li>
+            <li>Step count</li>
+            <li>Heart rate and heart rate variability (HRV)</li>
+            <li>Weight</li>
+            <li>Basal body temperature</li>
+            <li>Hydration / water intake</li>
+            <li>Menstruation data</li>
+        </ul>
+        <div class="callout">
+            <p><strong>HealthKit / Health Connect data is read-only.</strong> We access this data solely to display health insights within the App. This data is never sold, shared with third parties, or used for advertising purposes.</p>
+        </div>
+
+        <h4>Wellness &amp; Lifestyle Data</h4>
+        <p>We collect wellness data you log within the App, including hydration intake, sleep duration, exercise activity, weight entries, and nutrition logs.</p>
+
+        <h4>Journal &amp; Personal Entries</h4>
+        <p>We store the content you create within the App, including:</p>
+        <ul>
+            <li>Journal entries (daily reflections, gratitude logs)</li>
+            <li>Dream journal entries and symbol interpretations</li>
+            <li>Ancestral healing journal chapters</li>
+            <li>Conception story keepsake chapters</li>
+            <li>Letters to your future self or future child</li>
+            <li>Manifestation intentions and check-ins</li>
+            <li>Body mapping observations and emotional weather reports</li>
+        </ul>
+
+        <h4>Pregnancy &amp; Postpartum Data</h4>
+        <p>If you transition to pregnancy or postpartum mode, we collect pregnancy logs (weight, blood pressure, symptoms, mood, baby movement), due dates, and postpartum recovery data including baby feeding, diaper, and sleep logs, as well as EPDS screening responses.</p>
+
+        <h4>Community Data</h4>
+        <p>Posts, comments, and interactions you make in community features are stored on our servers. You may choose to post anonymously, in which case your display name is not attached to the content.</p>
+
+        <h4>Images</h4>
+        <p>Avatar photos and community post images you upload are stored using our image hosting provider (Cloudinary). We do not perform facial recognition or analysis on uploaded images.</p>
+
+        <h4>AI Chatbot Conversations</h4>
+        <p>When you use the in-app AI assistant, your messages and the assistant's responses are stored in your account. Your messages are sent to Anthropic's API to generate responses (see Section 4).</p>
+
+        <h4>Partner Data</h4>
+        <p>If you use the Partner Portal, we collect partner invite codes, partner check-in responses, and direct messages between you and your linked partner.</p>
+
+        <h4>Device Information</h4>
+        <p>We collect your device platform (iOS or Android) solely for the purpose of delivering push notifications. We store push notification tokens provided by Expo Push Notification services.</p>
+
+        <h4>Information We Do NOT Collect</h4>
+        <ul>
+            <li><strong>Location data:</strong> We do not collect or track your geographic location.</li>
+            <li><strong>Analytics or tracking data:</strong> We do not use analytics SDKs such as Firebase Analytics, Mixpanel, or similar tracking tools.</li>
+            <li><strong>Advertising identifiers:</strong> We do not collect advertising IDs or participate in ad networks.</li>
+        </ul>
+
+        <h3 id="pp-2">2. How We Use Your Information</h3>
+        <p>We use your information to:</p>
+        <ul>
+            <li>Provide and personalize the App's features, including cycle predictions, fertility insights, and phase-aware content recommendations</li>
+            <li>Power the intelligence engine that delivers cross-feature insights and daily alignment scores</li>
+            <li>Deliver push notifications for reminders (practices, journal prompts, supplements, period predictions, moon phases)</li>
+            <li>Send email notifications you have opted into (weekly summaries, fertile window alerts, pregnancy updates)</li>
+            <li>Enable community features and partner communication</li>
+            <li>Process subscription payments through RevenueCat, Apple StoreKit, and Google Play Billing</li>
+            <li>Respond to support requests</li>
+            <li>Improve the App's functionality and fix bugs</li>
+        </ul>
+        <p>We do <strong>not</strong> use your data for advertising. We do <strong>not</strong> sell your personal data to any third party.</p>
+
+        <h3 id="pp-3">3. Health Data &amp; Apple HealthKit / Health Connect</h3>
+        <p>We take the handling of health data very seriously. The following commitments apply specifically to data obtained from Apple HealthKit and Android Health Connect:</p>
+        <ul>
+            <li>Health data is accessed only with your explicit, opt-in permission.</li>
+            <li>Health data is used solely to display health insights and wellness metrics within the App.</li>
+            <li>Health data is <strong>never</strong> shared with third parties.</li>
+            <li>Health data is <strong>never</strong> used for advertising or marketing purposes.</li>
+            <li>Health data is <strong>never</strong> sold or disclosed to data brokers.</li>
+            <li>You can revoke health data access at any time through your device's system settings.</li>
+            <li>We may write water intake and food log data back to HealthKit / Health Connect with your permission, but only data you explicitly log within the App.</li>
+        </ul>
+        <p>All health data, whether entered manually or synced from HealthKit / Health Connect, is encrypted in transit via HTTPS (TLS 1.2+) and encrypted at rest in our database.</p>
+
+        <h3 id="pp-4">4. AI Chatbot &amp; Anthropic</h3>
+        <p>The Sacred Beginnings AI assistant is powered by Claude, developed by Anthropic. When you use the chatbot:</p>
+        <ul>
+            <li>Your messages are sent to Anthropic's API to generate responses.</li>
+            <li>A personalized system prompt containing your cycle phase, journey type, and relevant wellness context is included to provide helpful, contextual responses.</li>
+            <li>Anthropic does <strong>not</strong> store your conversations for model training purposes.</li>
+            <li>Chat history (up to 50 messages) is stored in your account on our servers so you can review past conversations.</li>
+            <li>The AI assistant is not a medical professional. All chatbot responses include a reminder that the information provided is not medical advice.</li>
+        </ul>
+        <p>For more information about Anthropic's data practices, please review <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">Anthropic's Privacy Policy</a>.</p>
+
+        <h3 id="pp-5">5. Third-Party Services</h3>
+        <p>We use the following third-party services to operate the App:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Purpose</th>
+                    <th>Data Shared</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>MongoDB Atlas</strong></td>
+                    <td>Database hosting</td>
+                    <td>All account and app data (encrypted at rest)</td>
+                </tr>
+                <tr>
+                    <td><strong>Cloudinary</strong></td>
+                    <td>Image storage &amp; delivery</td>
+                    <td>Uploaded images (avatars, community post photos)</td>
+                </tr>
+                <tr>
+                    <td><strong>Anthropic (Claude)</strong></td>
+                    <td>AI chatbot responses</td>
+                    <td>Chat messages and user context for response generation</td>
+                </tr>
+                <tr>
+                    <td><strong>RevenueCat</strong></td>
+                    <td>Subscription management</td>
+                    <td>User ID, subscription status, purchase receipts</td>
+                </tr>
+                <tr>
+                    <td><strong>Apple StoreKit</strong></td>
+                    <td>iOS in-app purchases</td>
+                    <td>Purchase transactions (handled by Apple)</td>
+                </tr>
+                <tr>
+                    <td><strong>Google Play Billing</strong></td>
+                    <td>Android in-app purchases</td>
+                    <td>Purchase transactions (handled by Google)</td>
+                </tr>
+                <tr>
+                    <td><strong>Expo Push Notifications</strong></td>
+                    <td>Push notification delivery</td>
+                    <td>Push tokens, notification content</td>
+                </tr>
+                <tr>
+                    <td><strong>Apple HealthKit</strong></td>
+                    <td>Health data sync (iOS)</td>
+                    <td>Read-only access to permitted health metrics</td>
+                </tr>
+                <tr>
+                    <td><strong>Android Health Connect</strong></td>
+                    <td>Health data sync (Android)</td>
+                    <td>Read-only access to permitted health metrics</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>We do not integrate any advertising networks, analytics SDKs, or social media tracking pixels.</p>
+
+        <h3 id="pp-6">6. Data Storage &amp; Security</h3>
+        <p>We implement the following security measures to protect your data:</p>
+        <ul>
+            <li><strong>Encryption in transit:</strong> All data transmitted between the App and our servers is encrypted using HTTPS (TLS 1.2 or higher).</li>
+            <li><strong>Encryption at rest:</strong> Your data is stored in MongoDB Atlas with encryption at rest enabled.</li>
+            <li><strong>Password security:</strong> Passwords are hashed using industry-standard bcrypt hashing. We never store plaintext passwords.</li>
+            <li><strong>Authentication:</strong> We use JWT-based authentication with separate access and refresh tokens. Tokens are stored securely using the device's secure storage (Keychain on iOS, encrypted SharedPreferences on Android).</li>
+            <li><strong>Access control:</strong> Administrative access to our systems is restricted and role-based.</li>
+        </ul>
+        <p>While we take reasonable precautions, no method of electronic transmission or storage is 100% secure. We cannot guarantee absolute security of your data.</p>
+
+        <h3 id="pp-7">7. Data Sharing</h3>
+        <p>We do <strong>not</strong> sell, rent, or trade your personal information. We share data only in these limited circumstances:</p>
+        <ul>
+            <li><strong>Third-party service providers:</strong> As described in Section 5, solely to operate the App's features.</li>
+            <li><strong>Partner features:</strong> If you link a partner, certain cycle and wellness information is shared with your linked partner as part of the Partner Portal features. You control this by choosing to link or unlink a partner.</li>
+            <li><strong>Community content:</strong> Posts and comments you make in community features are visible to other users (anonymously if you choose).</li>
+            <li><strong>Legal requirements:</strong> We may disclose information if required by law, court order, or governmental authority.</li>
+            <li><strong>Safety:</strong> We may share information if we believe in good faith that it is necessary to protect the safety of any person or to address fraud or security issues.</li>
+        </ul>
+
+        <h3 id="pp-8">8. Your Rights &amp; Choices</h3>
+        <p>You have the following rights regarding your personal data:</p>
+        <ul>
+            <li><strong>Access &amp; Export:</strong> You can export all your data at any time using the in-app data export feature. Exports are generated as HTML files covering your journal entries, cycle data, pregnancy logs, and more.</li>
+            <li><strong>Deletion:</strong> You can permanently delete your account and all associated data from within the App. Deletion is irreversible and removes all your data from our servers.</li>
+            <li><strong>Correction:</strong> You can edit your profile information, journal entries, and other personal data directly within the App.</li>
+            <li><strong>Notification preferences:</strong> You can manage push notification and email notification preferences in the App's settings.</li>
+            <li><strong>Health data access:</strong> You can grant or revoke HealthKit / Health Connect permissions at any time through your device's system settings.</li>
+            <li><strong>Partner unlinking:</strong> You can disconnect from a linked partner at any time, which revokes their access to your shared data.</li>
+        </ul>
+
+        <h3 id="pp-9">9. Data Retention</h3>
+        <p>We retain your personal data for as long as your account is active. If you delete your account, all your data is permanently removed from our servers. We do not maintain backups of individual user data after account deletion.</p>
+        <p>Anonymized, aggregated data that cannot be used to identify you (such as total community post counts) may be retained for service improvement purposes.</p>
+
+        <h3 id="pp-10">10. Children's Privacy (COPPA)</h3>
+        <p>Sacred Beginnings is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under 13. If we learn that we have inadvertently collected data from a child under 13, we will promptly delete that information. If you believe a child under 13 has provided us with personal data, please contact us at <a href="mailto:support@sacredbeginnings.com">support@sacredbeginnings.com</a>.</p>
+
+        <h3 id="pp-11">11. International Users (GDPR)</h3>
+        <p>If you are located in the European Economic Area (EEA), United Kingdom, or Switzerland, the following additional rights apply to you under the General Data Protection Regulation (GDPR):</p>
+        <ul>
+            <li><strong>Lawful basis:</strong> We process your data based on your consent (provided at account creation and when enabling specific features) and for the performance of our contract with you (providing the App's services).</li>
+            <li><strong>Right to access:</strong> You may request a copy of the personal data we hold about you.</li>
+            <li><strong>Right to rectification:</strong> You may request correction of inaccurate data.</li>
+            <li><strong>Right to erasure:</strong> You may request deletion of your data (available via in-app account deletion).</li>
+            <li><strong>Right to data portability:</strong> You may request your data in a portable format (available via in-app data export).</li>
+            <li><strong>Right to restrict processing:</strong> You may request that we limit how we use your data.</li>
+            <li><strong>Right to object:</strong> You may object to certain data processing activities.</li>
+            <li><strong>Right to withdraw consent:</strong> You may withdraw consent at any time without affecting the lawfulness of prior processing.</li>
+        </ul>
+        <p>To exercise any of these rights, please contact us at <a href="mailto:support@sacredbeginnings.com">support@sacredbeginnings.com</a>. We will respond within 30 days.</p>
+        <p>Your data may be transferred to and processed in the United States, where our servers are located. We ensure appropriate safeguards are in place for such transfers.</p>
+
+        <h3 id="pp-12">12. California Residents (CCPA/CPRA)</h3>
+        <p>If you are a California resident, you have additional rights under the California Consumer Privacy Act (CCPA) and the California Privacy Rights Act (CPRA):</p>
+        <ul>
+            <li><strong>Right to know:</strong> You may request details about the categories and specific pieces of personal information we collect, the purposes for collection, and the categories of third parties with whom we share data.</li>
+            <li><strong>Right to delete:</strong> You may request deletion of your personal information.</li>
+            <li><strong>Right to opt out of sale:</strong> We do <strong>not</strong> sell your personal information. There is no need to opt out because we do not engage in data sales.</li>
+            <li><strong>Right to non-discrimination:</strong> We will not discriminate against you for exercising your privacy rights.</li>
+            <li><strong>Sensitive personal information:</strong> Health and fertility data is considered sensitive personal information. We use this data only to provide the App's core features and do not use it for any secondary purposes.</li>
+        </ul>
+        <p>To exercise these rights, contact us at <a href="mailto:support@sacredbeginnings.com">support@sacredbeginnings.com</a>.</p>
+
+        <h3 id="pp-13">13. Changes to This Policy</h3>
+        <p>We may update this Privacy Policy from time to time. When we make material changes, we will notify you through the App or via email. Your continued use of the App after changes take effect constitutes acceptance of the revised policy.</p>
+
+        <h3 id="pp-14">14. Contact Us</h3>
+        <p>If you have any questions or concerns about this Privacy Policy or our data practices, please contact us:</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:support@sacredbeginnings.com">support@sacredbeginnings.com</a></li>
+            <li><strong>Website:</strong> <a href="https://sacredbeginnings.com" target="_blank" rel="noopener">sacredbeginnings.com</a></li>
+        </ul>
+    </div>
+
+    <!-- ======================== TERMS OF SERVICE ======================== -->
+    <div class="section" id="terms-of-service">
+        <h2 class="section-title">Terms of Service</h2>
+        <p class="section-subtitle">These Terms of Service ("Terms") govern your use of the Sacred Beginnings mobile application and related services (the "App") provided by Sacred Beginnings ("we," "us," or "our"). By using the App, you agree to these Terms.</p>
+
+        <div class="toc">
+            <h4>Contents</h4>
+            <ol>
+                <li><a href="#tos-1">Acceptance of Terms</a></li>
+                <li><a href="#tos-2">Medical Disclaimer</a></li>
+                <li><a href="#tos-3">Account Registration</a></li>
+                <li><a href="#tos-4">Subscriptions &amp; Payments</a></li>
+                <li><a href="#tos-5">Free &amp; Paid Features</a></li>
+                <li><a href="#tos-6">Content Ownership &amp; Licensing</a></li>
+                <li><a href="#tos-7">Community Guidelines</a></li>
+                <li><a href="#tos-8">AI Chatbot Disclaimer</a></li>
+                <li><a href="#tos-9">Prohibited Conduct</a></li>
+                <li><a href="#tos-10">Account Termination</a></li>
+                <li><a href="#tos-11">Limitation of Liability</a></li>
+                <li><a href="#tos-12">Disclaimer of Warranties</a></li>
+                <li><a href="#tos-13">Indemnification</a></li>
+                <li><a href="#tos-14">Governing Law &amp; Disputes</a></li>
+                <li><a href="#tos-15">Changes to These Terms</a></li>
+                <li><a href="#tos-16">Contact Us</a></li>
+            </ol>
+        </div>
+
+        <h3 id="tos-1">1. Acceptance of Terms</h3>
+        <p>By creating an account or using the App, you acknowledge that you have read, understood, and agree to be bound by these Terms and our <a href="#privacy-policy">Privacy Policy</a>. If you do not agree, you must not use the App.</p>
+        <p>You must be at least 13 years old to use the App. If you are between 13 and 18, you must have parental or guardian consent.</p>
+
+        <h3 id="tos-2">2. Medical Disclaimer</h3>
+        <div class="callout callout-warning">
+            <p><strong>Sacred Beginnings is NOT a medical device and does NOT provide medical advice.</strong> The App is a wellness and lifestyle tool designed for informational and educational purposes only. It is not a substitute for professional medical advice, diagnosis, or treatment.</p>
+        </div>
+        <p>Specifically:</p>
+        <ul>
+            <li>Cycle predictions, ovulation estimates, and fertility window calculations are based on statistical models and your logged data. They are <strong>not</strong> guaranteed to be accurate and should not be relied upon as a method of contraception or as a definitive guide for conception.</li>
+            <li>The Edinburgh Postnatal Depression Scale (EPDS) screening feature is provided for <strong>informational purposes only</strong>. Results are not a clinical diagnosis. If you are experiencing symptoms of depression or anxiety, please seek help from a qualified healthcare provider immediately.</li>
+            <li>Supplement recommendations, nutrition information, and wellness tips are general in nature and should not replace guidance from your doctor, midwife, or healthcare provider.</li>
+            <li>Pregnancy and postpartum content, including weekly development information and warning signs, is educational. Always consult your healthcare provider for medical decisions.</li>
+            <li>Spiritual practices, meditations, and breathing exercises are wellness activities. If you have any health conditions, consult your doctor before beginning new wellness practices.</li>
+        </ul>
+        <p><strong>If you are experiencing a medical emergency, call your local emergency number immediately.</strong></p>
+
+        <h3 id="tos-3">3. Account Registration</h3>
+        <p>To use the App, you must create an account with a valid email address and password. You are responsible for:</p>
+        <ul>
+            <li>Maintaining the confidentiality of your login credentials</li>
+            <li>All activity that occurs under your account</li>
+            <li>Providing accurate and up-to-date information</li>
+            <li>Notifying us promptly of any unauthorized access to your account</li>
+        </ul>
+
+        <h3 id="tos-4">4. Subscriptions &amp; Payments</h3>
+        <p>Sacred Beginnings offers a free tier and paid subscription plans:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Plan</th>
+                    <th>Price</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Free</strong></td>
+                    <td>$0</td>
+                    <td>Basic cycle tracking, journaling, community access, and core wellness features</td>
+                </tr>
+                <tr>
+                    <td><strong>Sacred</strong></td>
+                    <td>$4.99/month</td>
+                    <td>Guided meditations, spiritual practices, partner modules, and advanced insights</td>
+                </tr>
+                <tr>
+                    <td><strong>Sacred+</strong></td>
+                    <td>$9.99/month</td>
+                    <td>All Sacred features plus AI chatbot, guided journeys, sound healing library, oracle cards, and premium content</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Subscription terms:</p>
+        <ul>
+            <li><strong>Free trial:</strong> New subscribers may be eligible for a 7-day free trial. You will not be charged during the trial period. If you do not cancel before the trial ends, your subscription will automatically convert to a paid subscription.</li>
+            <li><strong>Auto-renewal:</strong> Subscriptions automatically renew at the end of each billing period (monthly) unless you cancel at least 24 hours before the renewal date.</li>
+            <li><strong>Cancellation:</strong> You may cancel your subscription at any time through the Apple App Store or Google Play Store. Cancellation takes effect at the end of the current billing period. You will retain access to paid features until your current period expires.</li>
+            <li><strong>Refunds:</strong> Refund requests are handled by Apple or Google according to their respective refund policies.</li>
+            <li><strong>Price changes:</strong> We may change subscription prices with advance notice. Price changes will not affect your current billing period.</li>
+        </ul>
+
+        <h3 id="tos-5">5. Free &amp; Paid Features</h3>
+        <p>Some features of the App are available to all users for free, while others require a paid subscription. We reserve the right to change which features are included in each tier. If a feature you currently use is moved to a paid tier, we will provide reasonable advance notice.</p>
+
+        <h3 id="tos-6">6. Content Ownership &amp; Licensing</h3>
+        <h4>Your Content</h4>
+        <p>You retain full ownership of all content you create within the App, including journal entries, community posts, uploaded images, and personal data. By using the App, you grant us a limited license to store, process, and display your content solely as necessary to provide the App's services. This license terminates when you delete your content or your account.</p>
+
+        <h4>Our Content</h4>
+        <p>All App content provided by Sacred Beginnings — including guided meditations, practice scripts, educational articles, recipes, weekly pregnancy content, and UI design — is owned by Sacred Beginnings and protected by copyright. You may not reproduce, distribute, or create derivative works from our content without written permission.</p>
+
+        <h4>Community Content</h4>
+        <p>Content you post in community features is visible to other users. You are solely responsible for the content you post. By posting, you grant other users the right to view your content within the App.</p>
+
+        <h3 id="tos-7">7. Community Guidelines</h3>
+        <p>When using community features, you agree to:</p>
+        <ul>
+            <li>Treat other members with kindness and respect</li>
+            <li>Not post content that is harassing, abusive, threatening, or discriminatory</li>
+            <li>Not make medical claims or diagnoses — you may share personal experiences but must not present them as medical advice</li>
+            <li>Not post spam, advertisements, or promotional content</li>
+            <li>Not share personally identifiable information about other users</li>
+            <li>Not post content that is illegal, harmful, or violates the rights of others</li>
+            <li>Use the report feature to flag content that violates these guidelines</li>
+        </ul>
+        <p>We moderate community content and reserve the right to remove any content that violates these guidelines. Repeated violations may result in account suspension or termination.</p>
+
+        <h3 id="tos-8">8. AI Chatbot Disclaimer</h3>
+        <p>The Sacred Beginnings AI assistant is designed to provide supportive, informational responses related to fertility, wellness, and the features of the App. Please understand that:</p>
+        <ul>
+            <li>The AI is <strong>not</strong> a healthcare professional, counselor, or therapist.</li>
+            <li>AI responses are generated by a language model and may not always be accurate or appropriate for your specific situation.</li>
+            <li>The AI cannot diagnose conditions, prescribe treatments, or replace professional medical or mental health care.</li>
+            <li>Conversations are processed by Anthropic's API. While Anthropic does not use your conversations for model training, please avoid sharing highly sensitive personal information beyond what is necessary for the App's features.</li>
+            <li>If you are in crisis, the AI may provide crisis resource information, but you should contact emergency services or a crisis hotline directly.</li>
+        </ul>
+
+        <h3 id="tos-9">9. Prohibited Conduct</h3>
+        <p>You agree not to:</p>
+        <ul>
+            <li>Use the App for any unlawful purpose</li>
+            <li>Attempt to access other users' accounts or data</li>
+            <li>Reverse engineer, decompile, or disassemble any part of the App</li>
+            <li>Use automated systems (bots, scrapers) to access the App</li>
+            <li>Interfere with or disrupt the App's infrastructure</li>
+            <li>Upload malicious code or content</li>
+            <li>Impersonate another person or entity</li>
+            <li>Use the App to collect information about other users without their consent</li>
+        </ul>
+
+        <h3 id="tos-10">10. Account Termination</h3>
+        <p>We reserve the right to suspend or terminate your account if you:</p>
+        <ul>
+            <li>Violate these Terms or the Community Guidelines</li>
+            <li>Engage in conduct that is harmful to other users or the App</li>
+            <li>Use the App in a manner that could create legal liability for us</li>
+        </ul>
+        <p>If your account is terminated for violations, you may forfeit any remaining paid subscription time. We will provide notice of termination and the reason, except in cases of severe violations requiring immediate action.</p>
+        <p>You may voluntarily delete your account at any time through the App's settings. Account deletion permanently removes all your data from our servers.</p>
+
+        <h3 id="tos-11">11. Limitation of Liability</h3>
+        <p>To the maximum extent permitted by applicable law:</p>
+        <ul>
+            <li>Sacred Beginnings shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of or inability to use the App.</li>
+            <li>Sacred Beginnings shall not be liable for any health outcomes, medical decisions, or personal decisions made based on information provided by the App, including cycle predictions, fertility estimates, wellness recommendations, or AI chatbot responses.</li>
+            <li>Our total liability for any claim arising from your use of the App shall not exceed the amount you paid us in the 12 months preceding the claim, or $50, whichever is greater.</li>
+        </ul>
+
+        <h3 id="tos-12">12. Disclaimer of Warranties</h3>
+        <p>The App is provided on an "as is" and "as available" basis. We make no warranties, express or implied, regarding the App, including but not limited to:</p>
+        <ul>
+            <li>Warranties of merchantability, fitness for a particular purpose, or non-infringement</li>
+            <li>That the App will be uninterrupted, error-free, or secure</li>
+            <li>That cycle predictions, fertility estimates, or health insights will be accurate</li>
+            <li>That the App will meet your specific requirements or expectations</li>
+        </ul>
+
+        <h3 id="tos-13">13. Indemnification</h3>
+        <p>You agree to indemnify and hold harmless Sacred Beginnings, its officers, employees, and affiliates from any claims, damages, losses, or expenses (including reasonable attorney's fees) arising from your use of the App, your violation of these Terms, or your violation of any rights of another party.</p>
+
+        <h3 id="tos-14">14. Governing Law &amp; Disputes</h3>
+        <p>These Terms are governed by the laws of the State of California, United States, without regard to its conflict of law principles. Any disputes arising from these Terms or your use of the App shall be resolved through binding arbitration in accordance with the rules of the American Arbitration Association, except that either party may seek injunctive relief in a court of competent jurisdiction.</p>
+        <p>You agree to resolve disputes on an individual basis and waive any right to participate in a class action lawsuit or class-wide arbitration.</p>
+
+        <h3 id="tos-15">15. Changes to These Terms</h3>
+        <p>We may update these Terms from time to time. When we make material changes, we will notify you through the App or via email at least 30 days before the changes take effect. Your continued use of the App after changes take effect constitutes acceptance of the revised Terms. If you do not agree to the updated Terms, you must stop using the App.</p>
+
+        <h3 id="tos-16">16. Contact Us</h3>
+        <p>If you have any questions about these Terms, please contact us:</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:support@sacredbeginnings.com">support@sacredbeginnings.com</a></li>
+            <li><strong>Website:</strong> <a href="https://sacredbeginnings.com" target="_blank" rel="noopener">sacredbeginnings.com</a></li>
+        </ul>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Sacred Beginnings. All rights reserved.</p>
+    <p style="margin-top: 8px;">
+        <a href="mailto:support@sacredbeginnings.com">support@sacredbeginnings.com</a>
+        &nbsp;&middot;&nbsp;
+        <a href="https://sacredbeginnings.com" target="_blank" rel="noopener">sacredbeginnings.com</a>
+    </p>
+</footer>
+
+</body>
+</html>
