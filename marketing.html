@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacred Beginnings — Your Sacred Journey to Motherhood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --gold: #C9944A;
+            --gold-light: #D4A85C;
+            --gold-dark: #B07D3A;
+            --bg: #FDF8F3;
+            --bg-card: #FFFFFF;
+            --text: #3D2E1F;
+            --text-secondary: #6B5A4A;
+            --text-light: #8C7B6B;
+            --border: #E8DDD2;
+            --blush: #FFB0C0;
+            --lilac: #D4B8E8;
+            --mint: #B8E6C8;
+            --blue: #A8D8F0;
+            --coral: #FFDAB0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(253, 248, 243, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            z-index: 100;
+            padding: 0 24px;
+        }
+
+        .nav-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 64px;
+        }
+
+        .nav-brand {
+            font-weight: 700;
+            font-size: 18px;
+            color: var(--gold);
+            text-decoration: none;
+            letter-spacing: -0.3px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 8px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-size: 14px;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            background: rgba(201, 148, 74, 0.1);
+            color: var(--gold);
+        }
+
+        .nav-links a.active {
+            background: rgba(201, 148, 74, 0.12);
+            color: var(--gold);
+        }
+
+        a {
+            color: var(--gold);
+            text-decoration: underline;
+            text-decoration-color: rgba(201, 148, 74, 0.3);
+            text-underline-offset: 2px;
+            transition: text-decoration-color 0.2s;
+        }
+
+        a:hover {
+            text-decoration-color: var(--gold);
+        }
+
+        /* Hero */
+        .hero {
+            padding: 140px 24px 80px;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 6px 20px;
+            background: rgba(201, 148, 74, 0.1);
+            color: var(--gold-dark);
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            letter-spacing: 0.3px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            font-weight: 800;
+            color: var(--text);
+            margin-bottom: 20px;
+            letter-spacing: -1.5px;
+            line-height: 1.15;
+        }
+
+        .hero h1 .accent {
+            color: var(--gold);
+        }
+
+        .hero p {
+            color: var(--text-secondary);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.7;
+            max-width: 600px;
+            margin: 0 auto 36px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 32px;
+            border-radius: 12px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border: none;
+            font-family: inherit;
+        }
+
+        .btn-primary {
+            background: var(--gold);
+            color: #FFFFFF;
+        }
+
+        .btn-primary:hover {
+            background: var(--gold-dark);
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+        .btn-secondary {
+            background: var(--bg-card);
+            color: var(--text);
+            border: 1px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--gold-light);
+            background: rgba(201, 148, 74, 0.05);
+            text-decoration: none;
+        }
+
+        /* Floating orbs decoration */
+        .hero-decor {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.15;
+            pointer-events: none;
+        }
+
+        .orb-1 {
+            width: 200px;
+            height: 200px;
+            background: var(--blush);
+            top: 80px;
+            left: -60px;
+        }
+
+        .orb-2 {
+            width: 150px;
+            height: 150px;
+            background: var(--lilac);
+            top: 160px;
+            right: -40px;
+        }
+
+        .orb-3 {
+            width: 120px;
+            height: 120px;
+            background: var(--mint);
+            bottom: -20px;
+            left: 60px;
+        }
+
+        /* Features */
+        .features-section {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 80px 24px;
+        }
+
+        .features-header {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .features-header h2 {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        .features-header p {
+            color: var(--text-light);
+            font-size: 16px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .feature-row {
+            display: flex;
+            align-items: center;
+            gap: 64px;
+            margin-bottom: 64px;
+        }
+
+        .feature-row.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .feature-content {
+            flex: 1;
+        }
+
+        .feature-visual {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .feature-icon-large {
+            width: 280px;
+            height: 200px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 64px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-icon-large::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            opacity: 0.12;
+            border-radius: 20px;
+        }
+
+        .fi-cycle { background: rgba(255, 176, 192, 0.15); }
+        .fi-spiritual { background: rgba(212, 184, 232, 0.15); }
+        .fi-ai { background: rgba(168, 216, 240, 0.2); }
+        .fi-wellness { background: rgba(184, 230, 200, 0.2); }
+        .fi-partner { background: rgba(255, 218, 176, 0.2); }
+        .fi-community { background: rgba(201, 148, 74, 0.1); }
+
+        .feature-label {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: var(--gold);
+            margin-bottom: 12px;
+        }
+
+        .feature-content h3 {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 12px;
+            letter-spacing: -0.3px;
+        }
+
+        .feature-content p {
+            color: var(--text-secondary);
+            font-size: 16px;
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            padding: 6px 0;
+            padding-left: 24px;
+            position: relative;
+            color: var(--text-secondary);
+            font-size: 15px;
+        }
+
+        .feature-list li::before {
+            content: "\2713";
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        /* Pricing */
+        .pricing-section {
+            padding: 80px 24px;
+            background: var(--bg-card);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .pricing-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .pricing-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .pricing-header h2 {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        .pricing-header p {
+            color: var(--text-light);
+            font-size: 16px;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            align-items: start;
+        }
+
+        .pricing-card {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 36px 28px;
+            position: relative;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(61, 46, 31, 0.08);
+        }
+
+        .pricing-card.featured {
+            border-color: var(--gold);
+            background: #FFFFFF;
+        }
+
+        .pricing-card.featured::before {
+            content: 'Most Popular';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gold);
+            color: #FFFFFF;
+            padding: 4px 16px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .pricing-name {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 8px;
+        }
+
+        .pricing-price {
+            display: flex;
+            align-items: baseline;
+            gap: 4px;
+            margin-bottom: 4px;
+        }
+
+        .pricing-amount {
+            font-size: 40px;
+            font-weight: 800;
+            color: var(--gold);
+            letter-spacing: -1px;
+        }
+
+        .pricing-period {
+            font-size: 16px;
+            color: var(--text-light);
+            font-weight: 400;
+        }
+
+        .pricing-annual {
+            font-size: 13px;
+            color: var(--text-light);
+            margin-bottom: 24px;
+        }
+
+        .pricing-divider {
+            height: 1px;
+            background: var(--border);
+            margin: 20px 0;
+        }
+
+        .pricing-features {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 28px;
+        }
+
+        .pricing-features li {
+            padding: 8px 0;
+            padding-left: 24px;
+            position: relative;
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        .pricing-features li::before {
+            content: "\2713";
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: 600;
+        }
+
+        .pricing-btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 14px 24px;
+            border-radius: 12px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .pricing-btn-primary {
+            background: var(--gold);
+            color: #FFFFFF;
+        }
+
+        .pricing-btn-primary:hover {
+            background: var(--gold-dark);
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+        .pricing-btn-secondary {
+            background: var(--bg);
+            color: var(--text);
+            border: 1px solid var(--border);
+        }
+
+        .pricing-btn-secondary:hover {
+            border-color: var(--gold-light);
+            text-decoration: none;
+        }
+
+        /* Testimonials */
+        .testimonials-section {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 80px 24px;
+        }
+
+        .testimonials-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .testimonials-header h2 {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        .testimonials-header p {
+            color: var(--text-light);
+            font-size: 16px;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .testimonial-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 32px;
+        }
+
+        .testimonial-stars {
+            color: var(--gold);
+            font-size: 16px;
+            letter-spacing: 2px;
+            margin-bottom: 16px;
+        }
+
+        .testimonial-quote {
+            font-size: 15px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .testimonial-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 16px;
+            color: #FFFFFF;
+        }
+
+        .ta-1 { background: linear-gradient(135deg, var(--blush), #FF8FA3); }
+        .ta-2 { background: linear-gradient(135deg, var(--lilac), #B898D4); }
+        .ta-3 { background: linear-gradient(135deg, var(--mint), #8FD4A8); }
+
+        .testimonial-name {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .testimonial-role {
+            font-size: 12px;
+            color: var(--text-light);
+        }
+
+        /* Bottom CTA */
+        .cta-section {
+            padding: 80px 24px;
+            text-align: center;
+            background: var(--bg-card);
+            border-top: 1px solid var(--border);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(201, 148, 74, 0.06) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .cta-inner {
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .cta-section h2 {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+
+        .cta-section p {
+            color: var(--text-secondary);
+            font-size: 16px;
+            margin-bottom: 32px;
+        }
+
+        /* Footer */
+        .site-footer {
+            background: var(--bg);
+            border-top: 1px solid var(--border);
+            padding: 48px 24px;
+        }
+
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            flex-wrap: wrap;
+            gap: 32px;
+        }
+
+        .footer-brand {
+            font-weight: 700;
+            font-size: 18px;
+            color: var(--gold);
+            text-decoration: none;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .footer-tagline {
+            font-size: 13px;
+            color: var(--text-light);
+            max-width: 280px;
+            line-height: 1.6;
+        }
+
+        .footer-links-group h4 {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+
+        .footer-links-group a {
+            display: block;
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 14px;
+            padding: 4px 0;
+            transition: color 0.2s;
+        }
+
+        .footer-links-group a:hover {
+            color: var(--gold);
+        }
+
+        .footer-bottom {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 24px 24px 0;
+            border-top: 1px solid var(--border);
+            margin-top: 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .footer-bottom p {
+            font-size: 13px;
+            color: var(--text-light);
+            margin: 0;
+        }
+
+        .footer-bottom a {
+            color: var(--gold);
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .footer-bottom a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .feature-row,
+            .feature-row.reverse {
+                flex-direction: column;
+                gap: 32px;
+            }
+
+            .feature-visual {
+                order: -1;
+            }
+
+            .pricing-grid,
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .hero {
+                padding: 120px 24px 60px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+                letter-spacing: -1px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .features-header h2,
+            .pricing-header h2,
+            .testimonials-header h2,
+            .cta-section h2 {
+                font-size: 28px;
+            }
+
+            .feature-content h3 {
+                font-size: 24px;
+            }
+
+            .feature-icon-large {
+                width: 240px;
+                height: 160px;
+                font-size: 48px;
+            }
+
+            .nav-links a {
+                padding: 8px 10px;
+                font-size: 13px;
+            }
+
+            .hero-decor {
+                display: none;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <a href="marketing.html" class="nav-brand">Sacred Beginnings</a>
+        <div class="nav-links">
+            <a href="marketing.html" class="active">Home</a>
+            <a href="support.html">Support</a>
+            <a href="index.html">Privacy &amp; Terms</a>
+        </div>
+    </div>
+</nav>
+
+<!-- ======================== HERO ======================== -->
+<div class="hero">
+    <div class="hero-decor orb-1"></div>
+    <div class="hero-decor orb-2"></div>
+    <div class="hero-decor orb-3"></div>
+
+    <span class="hero-badge">Body &middot; Mind &middot; Spirit</span>
+    <h1>Your <span class="accent">Sacred</span> Journey to Motherhood</h1>
+    <p>The first fertility app that honors body, mind, and spirit. Track your cycle, deepen your practice, and connect with a community of women who understand.</p>
+    <div class="hero-buttons">
+        <a href="#" class="btn btn-primary">Download on the App Store</a>
+        <a href="#features" class="btn btn-secondary">Learn More</a>
+    </div>
+</div>
+
+<!-- ======================== FEATURES ======================== -->
+<div class="features-section" id="features">
+    <div class="features-header">
+        <h2>Everything You Need, Nothing You Don't</h2>
+        <p>A complete transformation journey from trying to conceive to becoming the woman ready to receive a soul.</p>
+    </div>
+
+    <!-- Feature 1: Cycle Tracking -->
+    <div class="feature-row">
+        <div class="feature-content">
+            <span class="feature-label">Fertility Intelligence</span>
+            <h3>Smart Cycle Tracking</h3>
+            <p>An adaptive prediction engine that learns from your unique patterns. Log your data and watch your predictions become more accurate with every cycle.</p>
+            <ul class="feature-list">
+                <li>Adaptive cycle predictions with confidence scoring</li>
+                <li>BBT thermal shift detection and OPK correlation</li>
+                <li>15 symptom types and 10 mood categories</li>
+                <li>Color-coded calendar with fertile window overlay</li>
+                <li>Cycle regularity assessment and trend analysis</li>
+            </ul>
+        </div>
+        <div class="feature-visual">
+            <div class="feature-icon-large fi-cycle">
+                &#10022;
+            </div>
+        </div>
+    </div>
+
+    <!-- Feature 2: Spiritual Practices -->
+    <div class="feature-row reverse">
+        <div class="feature-content">
+            <span class="feature-label">Inner Wisdom</span>
+            <h3>Guided Spiritual Practices</h3>
+            <p>Over 30 meditations, breathwork sessions, affirmations, and rituals — all with professional audio. Practices are recommended based on your cycle phase and time of day.</p>
+            <ul class="feature-list">
+                <li>Womb healing and soul connection meditations</li>
+                <li>Breathwork for nervous system regulation</li>
+                <li>Phase-aware practice recommendations</li>
+                <li>Ambient sound layering (rain, ocean, singing bowls)</li>
+                <li>Session completion tracking and streak rewards</li>
+            </ul>
+        </div>
+        <div class="feature-visual">
+            <div class="feature-icon-large fi-spiritual">
+                &#9775;
+            </div>
+        </div>
+    </div>
+
+    <!-- Feature 3: AI Companion -->
+    <div class="feature-row">
+        <div class="feature-content">
+            <span class="feature-label">Personalized Guidance</span>
+            <h3>AI-Powered Companion</h3>
+            <p>An always-available companion that understands your cycle, your journey, and your unique needs. Ask anything about fertility, wellness, or the app's features.</p>
+            <ul class="feature-list">
+                <li>Context-aware responses based on your cycle phase</li>
+                <li>Personalized suggestions tied to your journey type</li>
+                <li>Quick answers about fertility, nutrition, and wellness</li>
+                <li>Deep links to relevant app features</li>
+                <li>Medical disclaimer enforced on every response</li>
+            </ul>
+        </div>
+        <div class="feature-visual">
+            <div class="feature-icon-large fi-ai">
+                &#10024;
+            </div>
+        </div>
+    </div>
+
+    <!-- Feature 4: Wellness -->
+    <div class="feature-row reverse">
+        <div class="feature-content">
+            <span class="feature-label">Whole-Body Wellness</span>
+            <h3>Holistic Health Tracking</h3>
+            <p>Track hydration, sleep, nutrition, supplements, and exercise — all in one place. Sync with Apple Health or Health Connect for automatic data.</p>
+            <ul class="feature-list">
+                <li>Hydration, sleep, exercise, and weight tracking</li>
+                <li>Supplement and medication reminders</li>
+                <li>Fertility-friendly recipe database with 25+ recipes</li>
+                <li>Apple Health and Health Connect integration</li>
+                <li>Health scores: Wellness, Calm, Fertility Readiness</li>
+            </ul>
+        </div>
+        <div class="feature-visual">
+            <div class="feature-icon-large fi-wellness">
+                &#9752;
+            </div>
+        </div>
+    </div>
+
+    <!-- Feature 5: Partner -->
+    <div class="feature-row">
+        <div class="feature-content">
+            <span class="feature-label">Together</span>
+            <h3>Partner Portal</h3>
+            <p>Conception is a shared journey. Invite your partner to see your cycle, exchange daily check-ins, and build deeper connection through communication prompts.</p>
+            <ul class="feature-list">
+                <li>Shared cycle view with fertile window visibility</li>
+                <li>Daily communication prompts and check-ins</li>
+                <li>Private real-time chat</li>
+                <li>Intimacy calendar for holistic connection tracking</li>
+                <li>Easy invite code system — connect in seconds</li>
+            </ul>
+        </div>
+        <div class="feature-visual">
+            <div class="feature-icon-large fi-partner">
+                &#9829;
+            </div>
+        </div>
+    </div>
+
+    <!-- Feature 6: Community -->
+    <div class="feature-row reverse">
+        <div class="feature-content">
+            <span class="feature-label">You're Not Alone</span>
+            <h3>Community &amp; Support</h3>
+            <p>A safe, moderated space to share your story, find encouragement, and connect with women who truly understand the journey.</p>
+            <ul class="feature-list">
+                <li>Support circles with auto-matching or private invites</li>
+                <li>Anonymous posting for sensitive topics</li>
+                <li>8 discussion categories (TTC, IVF, Spiritual Motherhood, etc.)</li>
+                <li>Success stories wall with sensitivity controls</li>
+                <li>Moderated by real people — safe and respectful</li>
+            </ul>
+        </div>
+        <div class="feature-visual">
+            <div class="feature-icon-large fi-community">
+                &#10038;
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ======================== PRICING ======================== -->
+<div class="pricing-section" id="pricing">
+    <div class="pricing-inner">
+        <div class="pricing-header">
+            <h2>Choose Your Path</h2>
+            <p>Start free and upgrade when you're ready. Cancel anytime.</p>
+        </div>
+
+        <div class="pricing-grid">
+            <!-- Free -->
+            <div class="pricing-card">
+                <div class="pricing-name">Free</div>
+                <div class="pricing-price">
+                    <span class="pricing-amount">$0</span>
+                </div>
+                <p class="pricing-annual">Free forever</p>
+                <div class="pricing-divider"></div>
+                <ul class="pricing-features">
+                    <li>Basic cycle tracking and calendar</li>
+                    <li>Daily logging (period, symptoms, mood)</li>
+                    <li>3 guided journal prompts</li>
+                    <li>Community access</li>
+                    <li>Wellness dashboard (manual entry)</li>
+                    <li>Hydration and sleep tracking</li>
+                    <li>Limited educational resources</li>
+                </ul>
+                <a href="#" class="pricing-btn pricing-btn-secondary">Get Started Free</a>
+            </div>
+
+            <!-- Sacred -->
+            <div class="pricing-card featured">
+                <div class="pricing-name">Sacred</div>
+                <div class="pricing-price">
+                    <span class="pricing-amount">$4.99</span>
+                    <span class="pricing-period">/month</span>
+                </div>
+                <p class="pricing-annual">or $39.99/year (save 33%)</p>
+                <div class="pricing-divider"></div>
+                <ul class="pricing-features">
+                    <li>Everything in Free</li>
+                    <li>Full cycle intelligence and predictions</li>
+                    <li>All guided journal prompts</li>
+                    <li>Spiritual practices library</li>
+                    <li>25+ fertility-friendly recipes</li>
+                    <li>All educational resources</li>
+                    <li>Supplement and appointment tracking</li>
+                    <li>Budget, timeline, and checklists</li>
+                    <li>Daily routines</li>
+                    <li>Apple Health / Health Connect sync</li>
+                    <li>Data export</li>
+                </ul>
+                <a href="#" class="pricing-btn pricing-btn-primary">Start 7-Day Free Trial</a>
+            </div>
+
+            <!-- Sacred+ -->
+            <div class="pricing-card">
+                <div class="pricing-name">Sacred+</div>
+                <div class="pricing-price">
+                    <span class="pricing-amount">$9.99</span>
+                    <span class="pricing-period">/month</span>
+                </div>
+                <p class="pricing-annual">or $69.99/year (save 42%)</p>
+                <div class="pricing-divider"></div>
+                <ul class="pricing-features">
+                    <li>Everything in Sacred</li>
+                    <li>AI chatbot companion</li>
+                    <li>Audio meditations and sound healing</li>
+                    <li>Conscious Conception Journey (6 weeks)</li>
+                    <li>Partner Hub and intimacy calendar</li>
+                    <li>Pregnancy and postpartum modules</li>
+                    <li>Womb Wisdom Oracle cards</li>
+                    <li>Body mapping and emotional weather</li>
+                    <li>Voice journaling</li>
+                    <li>Dream journal and ancestral healing</li>
+                    <li>Smart insights and pattern analysis</li>
+                    <li>Manifestation tracker</li>
+                    <li>Monthly ritual planner</li>
+                    <li>Moon phase and astrology features</li>
+                </ul>
+                <a href="#" class="pricing-btn pricing-btn-primary">Start 7-Day Free Trial</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ======================== TESTIMONIALS ======================== -->
+<div class="testimonials-section">
+    <div class="testimonials-header">
+        <h2>Stories from Our Community</h2>
+        <p>Hear from women who've walked this path.</p>
+    </div>
+
+    <div class="testimonials-grid">
+        <div class="testimonial-card">
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial-quote">"This app changed how I approach my fertility journey. Instead of anxiety and spreadsheets, I wake up with intention, meditate with my cycle, and actually feel at peace with the process. The daily alignment score keeps me grounded when things feel uncertain."</p>
+            <div class="testimonial-author">
+                <div class="testimonial-avatar ta-1">S</div>
+                <div>
+                    <div class="testimonial-name">Sarah M.</div>
+                    <div class="testimonial-role">Beta Tester</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial-quote">"My husband and I did the partner check-ins every evening and it completely transformed our communication. He finally felt included in the journey instead of just waiting on the sidelines. The Conscious Conception Journey brought us closer than we've ever been."</p>
+            <div class="testimonial-author">
+                <div class="testimonial-avatar ta-2">A</div>
+                <div>
+                    <div class="testimonial-name">Amara K.</div>
+                    <div class="testimonial-role">Beta Tester</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial-quote">"After two years of trying, I was exhausted — physically and emotionally. Sacred Beginnings gave me a space that wasn't clinical or cold. The guided meditations and journaling helped me process grief I didn't even know I was carrying. I finally feel hopeful again."</p>
+            <div class="testimonial-author">
+                <div class="testimonial-avatar ta-3">J</div>
+                <div>
+                    <div class="testimonial-name">Jessica T.</div>
+                    <div class="testimonial-role">Beta Tester</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ======================== BOTTOM CTA ======================== -->
+<div class="cta-section">
+    <div class="cta-inner">
+        <h2>Begin Your Sacred Journey Today</h2>
+        <p>Join thousands of women who are transforming the way they prepare for motherhood — with intention, connection, and grace.</p>
+        <a href="#" class="btn btn-primary">Download on the App Store</a>
+    </div>
+</div>
+
+<!-- ======================== FOOTER ======================== -->
+<div class="site-footer">
+    <div class="footer-inner">
+        <div>
+            <a href="marketing.html" class="footer-brand">Sacred Beginnings</a>
+            <p class="footer-tagline">The first fertility app that honors body, mind, and spirit. Your journey to motherhood, reimagined.</p>
+        </div>
+        <div class="footer-links-group">
+            <h4>Product</h4>
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#">Download iOS</a>
+            <a href="#">Download Android</a>
+        </div>
+        <div class="footer-links-group">
+            <h4>Support</h4>
+            <a href="support.html">Help Center</a>
+            <a href="support.html#features-faq">FAQ</a>
+            <a href="support.html#contact-us">Contact Us</a>
+        </div>
+        <div class="footer-links-group">
+            <h4>Legal</h4>
+            <a href="index.html#privacy-policy">Privacy Policy</a>
+            <a href="index.html#terms-of-service">Terms of Service</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Sacred Beginnings. All rights reserved.</p>
+        <a href="mailto:support@sacredbeginnings.com">support@sacredbeginnings.com</a>
+    </div>
+</div>
+
+</body>
+</html>

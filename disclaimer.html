@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacred Beginnings — Disclaimer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --gold: #C9944A;
+            --gold-light: #D4A85C;
+            --gold-dark: #B07D3A;
+            --bg: #FDF8F3;
+            --bg-card: #FFFFFF;
+            --text: #3D2E1F;
+            --text-secondary: #6B5A4A;
+            --text-light: #8C7B6B;
+            --border: #E8DDD2;
+            --blush: #FFB0C0;
+            --lilac: #D4B8E8;
+            --mint: #B8E6C8;
+            --blue: #A8D8F0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(253, 248, 243, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            z-index: 100;
+            padding: 0 24px;
+        }
+
+        .nav-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 64px;
+        }
+
+        .nav-brand {
+            font-weight: 700;
+            font-size: 18px;
+            color: var(--gold);
+            text-decoration: none;
+            letter-spacing: -0.3px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 8px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-size: 14px;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            background: rgba(201, 148, 74, 0.1);
+            color: var(--gold);
+        }
+
+        .nav-links a.active {
+            background: rgba(201, 148, 74, 0.12);
+            color: var(--gold);
+        }
+
+        /* Hero */
+        .hero {
+            padding: 120px 24px 48px;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        .hero p {
+            color: var(--text-light);
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        /* Content */
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px 80px;
+        }
+
+        .section {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 48px;
+            margin-bottom: 32px;
+        }
+
+        @media (max-width: 640px) {
+            .section {
+                padding: 28px 20px;
+                border-radius: 12px;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+        }
+
+        .section-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: 8px;
+            letter-spacing: -0.3px;
+        }
+
+        .section-subtitle {
+            color: var(--text-light);
+            font-size: 14px;
+            margin-bottom: 36px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--text);
+            margin-top: 36px;
+            margin-bottom: 12px;
+            letter-spacing: -0.2px;
+        }
+
+        h3:first-of-type {
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: 12px;
+            color: var(--text-secondary);
+        }
+
+        ul, ol {
+            margin-bottom: 12px;
+            padding-left: 24px;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        strong {
+            color: var(--text);
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(201, 148, 74, 0.08), rgba(212, 184, 232, 0.08));
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--gold);
+            border-radius: 12px;
+            padding: 24px 28px;
+            margin: 24px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            font-style: italic;
+        }
+
+        .warning-box {
+            background: rgba(255, 176, 192, 0.1);
+            border: 1px solid rgba(255, 176, 192, 0.3);
+            border-left: 4px solid var(--blush);
+            border-radius: 12px;
+            padding: 24px 28px;
+            margin: 24px 0;
+        }
+
+        .warning-box p {
+            margin-bottom: 0;
+        }
+
+        .data-source {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 16px 0;
+        }
+
+        .data-source-icon {
+            font-size: 24px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .data-source-content {
+            flex: 1;
+        }
+
+        .data-source-content strong {
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .data-source-content p {
+            margin-bottom: 0;
+            font-size: 14px;
+        }
+
+        .last-updated {
+            text-align: center;
+            color: var(--text-light);
+            font-size: 13px;
+            margin-top: 16px;
+            font-style: italic;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 32px 24px 48px;
+            color: var(--text-light);
+            font-size: 14px;
+            border-top: 1px solid var(--border);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        footer a {
+            color: var(--gold);
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <a href="index.html" class="nav-brand">Sacred Beginnings</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="support.html">Support</a>
+            <a href="disclaimer.html" class="active">Disclaimer</a>
+        </div>
+    </div>
+</nav>
+
+<div class="hero">
+    <h1>Disclaimer</h1>
+    <p>Important information about how Sacred Beginnings presents data and predictions</p>
+</div>
+
+<div class="content">
+
+    <!-- General Disclaimer -->
+    <div class="section">
+        <h2 class="section-title">General Disclaimer</h2>
+        <p class="section-subtitle">Please read this disclaimer carefully before using the Sacred Beginnings application.</p>
+
+        <div class="highlight-box">
+            <p>Sacred Beginnings is a wellness and lifestyle application designed to support your journey toward conception, pregnancy, and parenthood. It is <strong>not a medical device</strong> and does not provide medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider for medical concerns.</p>
+        </div>
+
+        <p>The information provided within this application, including but not limited to fertility tracking, cycle predictions, wellness recommendations, and spiritual content, is intended for <strong>general informational, educational, and entertainment purposes only</strong>.</p>
+
+        <p>No content within this app should be considered a substitute for professional medical advice, diagnosis, or treatment. Never disregard professional medical advice or delay seeking it because of something you have read or accessed through this application.</p>
+    </div>
+
+    <!-- Astrology & Predictions -->
+    <div class="section">
+        <h2 class="section-title">Astrology, Horoscopes & Predictions</h2>
+        <p class="section-subtitle">Understanding the nature of astrological content in the app</p>
+
+        <div class="warning-box">
+            <p><strong>Astrological readings, horoscopes, compatibility scores, numerology results, and all prediction-based content are for entertainment and spiritual reflection only.</strong> They should not be taken as factual or used as a basis for major life decisions.</p>
+        </div>
+
+        <h3>What This Means</h3>
+        <ul>
+            <li><strong>Daily horoscopes</strong> are general readings based on sun sign positions. They are not personalized medical, financial, or relationship advice.</li>
+            <li><strong>Compatibility scores</strong> (both Western zodiac and Vedic Ashtakoot) reflect traditional astrological frameworks. They do not predict the success or failure of any relationship.</li>
+            <li><strong>Fertility horoscopes and auspicious day calendars</strong> draw from astrological traditions and should not replace medical fertility guidance from your healthcare provider.</li>
+            <li><strong>Numerology analysis</strong> (baby name energy, life path numbers) is based on traditional numerological systems and is presented as a fun, reflective exercise.</li>
+            <li><strong>Vedic astrology content</strong> (nakshatras, tithis, panchang, dashas) follows traditional Jyotish principles and is presented for cultural and spiritual context.</li>
+            <li><strong>Natal chart interpretations and planetary transits</strong> are calculated from astronomical positions but their interpretive meaning is rooted in astrological tradition, not empirical science.</li>
+            <li><strong>Chinese zodiac readings</strong> are based on traditional Chinese astrological systems.</li>
+        </ul>
+
+        <h3>Accuracy of Astrological Calculations</h3>
+        <p>Astrological calculations (planetary positions, chart data, nakshatra determination) are computed using astronomical algorithms and third-party services. While the underlying astronomical math is precise, <strong>the interpretive layer (what these positions "mean") is a matter of belief and tradition, not scientific fact</strong>.</p>
+        <p>For more accurate birth chart calculations, providing your exact birth time and birth location is recommended. Without these, the app uses default values which may affect the precision of chart-specific readings.</p>
+    </div>
+
+    <!-- Data Sources -->
+    <div class="section">
+        <h2 class="section-title">Data Sources & Attribution</h2>
+        <p class="section-subtitle">Where our astrological and wellness data comes from</p>
+
+        <div class="data-source">
+            <span class="data-source-icon">&#9734;</span>
+            <div class="data-source-content">
+                <strong>AstrologyAPI</strong>
+                <p>Daily horoscopes, planetary positions, natal charts, Vedic astrology details (panchang, nakshatras, dashas), Ashtakoot compatibility, numerology calculations, Chinese zodiac, and moon phase data are provided by <a href="https://astrologyapi.com" target="_blank" rel="noopener">AstrologyAPI</a>.</p>
+            </div>
+        </div>
+
+        <div class="data-source">
+            <span class="data-source-icon">&#9789;</span>
+            <div class="data-source-content">
+                <strong>Curated Spiritual Content</strong>
+                <p>Guided meditations, affirmations, rituals, journal prompts, and multi-faith spiritual content are curated by the Sacred Beginnings team and rooted in their respective cultural and spiritual traditions. This content is presented respectfully for personal reflection and does not represent official religious guidance.</p>
+            </div>
+        </div>
+
+        <div class="data-source">
+            <span class="data-source-icon">&#10084;</span>
+            <div class="data-source-content">
+                <strong>Health & Wellness</strong>
+                <p>Cycle tracking predictions, wellness scores, and health metrics are based on general health information and user-provided data. They use standard calculation methods but are <strong>not clinically validated</strong>. Health data synced from Apple Health or Health Connect is provided by your device and its connected sensors.</p>
+            </div>
+        </div>
+
+        <div class="data-source">
+            <span class="data-source-icon">&#128172;</span>
+            <div class="data-source-content">
+                <strong>AI Chatbot</strong>
+                <p>The in-app AI assistant is powered by Anthropic's Claude. It provides general information and spiritual support. It is not a medical professional, therapist, or certified counselor. Always verify important information with qualified professionals.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fertility & Health -->
+    <div class="section">
+        <h2 class="section-title">Fertility & Health Information</h2>
+        <p class="section-subtitle">Important limitations of health-related features</p>
+
+        <h3>Cycle Tracking & Predictions</h3>
+        <p>The app's cycle prediction engine uses your logged data (period dates, basal body temperature, cervical mucus observations, OPK results) to estimate future cycles, fertile windows, and ovulation timing. These predictions are <strong>estimates based on patterns</strong> and may not be accurate for every individual or cycle.</p>
+
+        <div class="warning-box">
+            <p>Cycle predictions should <strong>not</strong> be used as a sole method of contraception or as a substitute for professional fertility assessment. If you are having difficulty conceiving, please consult a reproductive endocrinologist or fertility specialist.</p>
+        </div>
+
+        <h3>Wellness Scores</h3>
+        <p>Wellness scores, alignment scores, fertility readiness scores, and emotional wellness scores are calculated from self-reported data and general wellness principles. They are motivational tools, not clinical assessments. A low or high score does not constitute a medical diagnosis.</p>
+
+        <h3>Supplement & Nutrition Information</h3>
+        <p>Supplement suggestions and nutrition information in the app are general wellness information. They are not prescriptions. Always consult your healthcare provider before starting any new supplement, especially during preconception, pregnancy, or postpartum periods.</p>
+    </div>
+
+    <!-- Community -->
+    <div class="section">
+        <h2 class="section-title">Community Content</h2>
+        <p class="section-subtitle">User-generated content and shared experiences</p>
+
+        <p>The community features (forums, support circles, success stories) contain user-generated content that represents individual experiences and opinions. Sacred Beginnings does not endorse, verify, or take responsibility for the accuracy of user-shared content.</p>
+        <p>If you encounter content that is harmful, misleading, or violates community guidelines, please report it using the in-app reporting feature.</p>
+    </div>
+
+    <!-- Liability -->
+    <div class="section">
+        <h2 class="section-title">Limitation of Liability</h2>
+        <p class="section-subtitle">Legal limitations</p>
+
+        <p>To the fullest extent permitted by applicable law, Sacred Beginnings and its developers shall not be held liable for any damages, losses, or adverse outcomes arising from the use of this application, including but not limited to:</p>
+        <ul>
+            <li>Decisions made based on astrological, numerological, or predictive content</li>
+            <li>Health outcomes related to fertility tracking, wellness recommendations, or supplement information</li>
+            <li>Emotional distress from prediction or compatibility content</li>
+            <li>Inaccuracies in third-party data (AstrologyAPI, health device data)</li>
+        </ul>
+        <p>By using this application, you acknowledge that you have read and understood this disclaimer and agree to use the app's features at your own discretion.</p>
+    </div>
+
+    <!-- Contact -->
+    <div class="section">
+        <h2 class="section-title">Questions?</h2>
+        <p class="section-subtitle">Get in touch</p>
+
+        <p>If you have any questions about this disclaimer or how data is used within the app, please reach out to us through our <a href="support.html">Support page</a>.</p>
+    </div>
+
+    <p class="last-updated">Last updated: March 25, 2026</p>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Sacred Beginnings. All rights reserved.</p>
+    <p style="margin-top: 8px;"><a href="index.html">Home</a> &middot; <a href="support.html">Support</a> &middot; <a href="disclaimer.html">Disclaimer</a></p>
+</footer>
+
+</body>
+</html>
